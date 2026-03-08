@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddy's Aquarium & Pet Shop | Premium Pets in Vizag</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        <span>Reddy's Aquarium & Pet Shop</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html" class="cart-link">Cart <span class="cart-count" data-cart-count>0</span></a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-meta">
+        <span class="user-pill" data-user-name>Guest</span>
+        <a href="login.html" class="btn btn-soft" data-auth-link>Login</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Premium Aquarium Fish & Pet Supplies in Vizag</h1>
+          <p>Healthy fish, birds and pet accessories from a trusted local store. Discover curated products with startup-grade service quality.</p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+            <a href="contact.html" class="btn btn-accent">Contact Owner</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero.svg" alt="Premium pet shop hero" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Categories</h2>
+        <p class="section-subtitle">Explore every major pet category in one place, from aquarium fish and birds to tanks, cages, food, and toys.</p>
+        <div class="card-grid">
+          <a class="glass-card category-card" href="shop.html?category=Aquarium Fish">
+            <img src="images/fish.svg" alt="Aquarium Fish" />
+            <div class="card-body"><h3 class="card-title">Aquarium Fish</h3></div>
+          </a>
+          <a class="glass-card category-card" href="shop.html?category=Birds">
+            <img src="images/birds.svg" alt="Birds" />
+            <div class="card-body"><h3 class="card-title">Birds</h3></div>
+          </a>
+          <a class="glass-card category-card" href="shop.html?category=Small Pets">
+            <img src="images/smallpets.svg" alt="Small Pets" />
+            <div class="card-body"><h3 class="card-title">Small Pets</h3></div>
+          </a>
+          <a class="glass-card category-card" href="shop.html?category=Aquariums">
+            <img src="images/aquariums.svg" alt="Aquariums" />
+            <div class="card-body"><h3 class="card-title">Aquariums</h3></div>
+          </a>
+          <a class="glass-card category-card" href="shop.html?category=Pet Cages">
+            <img src="images/cages.svg" alt="Pet Cages" />
+            <div class="card-body"><h3 class="card-title">Pet Cages</h3></div>
+          </a>
+          <a class="glass-card category-card" href="shop.html?category=Pet Food">
+            <img src="images/food.svg" alt="Pet Food" />
+            <div class="card-body"><h3 class="card-title">Pet Food</h3></div>
+          </a>
+          <a class="glass-card category-card" href="shop.html?category=Pet Toys">
+            <img src="images/toys.svg" alt="Pet Toys" />
+            <div class="card-body"><h3 class="card-title">Pet Toys</h3></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Best Sellers</h2>
+        <p class="section-subtitle">Handpicked items customers regularly buy from our store in Visakhapatnam.</p>
+        <div class="product-grid" id="featuredProducts"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Reddy's Aquarium & Pet Shop</h4>
+        <p>Trusted local pet care partner in Visakhapatnam, Andhra Pradesh.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="shop.html">Shop</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Phone</h4>
+        <p>8374293417</p>
+      </div>
+      <div>
+        <h4>Copyright</h4>
+        <p>© 2026 Reddy's Aquarium & Pet Shop</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
