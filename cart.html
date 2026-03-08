@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Reddy's Aquarium & Pet Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand"><span class="brand-dot"></span><span>Reddy's Aquarium & Pet Shop</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html" class="cart-link active">Cart <span class="cart-count" data-cart-count>0</span></a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-meta">
+        <span class="user-pill" data-user-name>Guest</span>
+        <a href="login.html" class="btn btn-soft" data-auth-link>Login</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Your Cart</h1>
+      <p class="section-subtitle">Review your products, update quantities, and place your order via WhatsApp.</p>
+      <div class="cart-layout">
+        <div class="glass-card" style="padding:1rem;" id="cartItems"></div>
+        <aside class="glass-card cart-summary">
+          <h3 style="margin-bottom:0.8rem;">Order Summary</h3>
+          <p style="color:var(--text-soft); margin-bottom:0.6rem;">Total</p>
+          <p style="font-size:1.65rem; font-weight:800; color:var(--primary); margin-bottom:1rem;" id="cartTotal">?0</p>
+          <button class="btn btn-accent" id="orderWhatsAppBtn" style="width:100%; margin-bottom:0.6rem;">Order via WhatsApp</button>
+          <a class="btn btn-soft" href="shop.html" style="width:100%;">Continue Shopping</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h4>Reddy's Aquarium & Pet Shop</h4><p>Premium pet experience from your local store.</p></div>
+      <div><h4>Quick Links</h4><p><a href="shop.html">Shop</a></p><p><a href="contact.html">Contact</a></p></div>
+      <div><h4>Phone</h4><p>8374293417</p></div>
+      <div><h4>Copyright</h4><p>© 2026 Reddy's Aquarium & Pet Shop</p></div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
