@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Reddy's Aquarium & Pet Shop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="nav-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand"><span class="brand-dot"></span><span>Reddy's Aquarium & Pet Shop</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html" class="cart-link">Cart <span class="cart-count" data-cart-count>0</span></a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-meta">
+        <span class="user-pill" data-user-name>Guest</span>
+        <a href="login.html" class="btn btn-soft active" data-auth-link>Login</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="section meta-page">
+    <div class="container">
+      <div class="glass-card form-wrap" style="padding: 1.25rem;">
+        <h2 class="section-title" style="font-size:2rem; margin-bottom: 0.6rem;">Welcome Back</h2>
+        <p class="section-subtitle">Sign in to personalize your pet shopping and checkout quickly.</p>
+
+        <!-- Login form stores user data in LocalStorage -->
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Enter your full name" />
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="10-digit phone number" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="Enter your email address" />
+          </div>
+          <button class="btn btn-primary" type="submit">Login & Continue</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h4>Reddy's Aquarium & Pet Shop</h4><p>Premium pet supplies in Vizag.</p></div>
+      <div><h4>Quick Links</h4><p><a href="shop.html">Shop</a></p><p><a href="contact.html">Contact</a></p></div>
+      <div><h4>Phone</h4><p>8374293417</p></div>
+      <div><h4>Copyright</h4><p>© 2026 Reddy's Aquarium & Pet Shop</p></div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
